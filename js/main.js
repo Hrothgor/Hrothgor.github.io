@@ -55,11 +55,4 @@ jQuery(document).ready(function($) {
           return false;
           
         })
- 
-
-        $(".menu-icon").click(function() {
-          $(this).toggleClass("active");
-          $(".overlay-menu").toggleClass("open");
-        });
-
 });
