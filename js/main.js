@@ -57,16 +57,16 @@ jQuery(document).ready(function($) {
         })
 });
 
-const form = document.getElementById('contact');
-form.addEventListener('submit', emailSubmit);
+// const form = document.getElementById('contact');
+// form.addEventListener('submit', emailSubmit);
 
-function emailSubmit(event) {
-  $.ajax({
-    type: "POST",
-    url: "send-mail.php",
-    data: { action: "add" },
-    success: function(msg){
-      alert( "Data Saved: " + msg );
-    }
-  });
-}
+// function emailSubmit(event) {
+//   $.ajax({
+//     type: "POST",
+//     url: "send-mail.php",
+//     data: { action: "add" },
+//     success: function(msg){
+//       alert( "Data Saved: " + msg );
+//     }
+//   });
+// }
