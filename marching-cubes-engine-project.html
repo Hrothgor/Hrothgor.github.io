@@ -48,23 +48,47 @@
                         <div class="single-blog-post">
                           <div class="text-content">
                             <h2>About this project</h2>
-                            <p>Nullam et justo pharetra, commodo eros ac, pharetra justo. Donec vel vehicula urna. Proin sodales ligula vitae lacus elementum, at tempor nisl congue. Pellentesque nec lacus velit. Vestibulum tincidunt hendrerit ante id sagittis. Phasellus sodales nibh mattis neque interdum viverra. Nam accumsan arcu id fringilla auctor. 
-                              <br><br>Suspendisse et rutrum nisl. Phasellus porttitor metus vel justo blandit, in finibus neque elementum. Nullam semper, turpis quis egestas consequat, dui eros tristique lectus, ac euismod ex quam id mauris. Nunc sit amet nibh sollicitudin, interdum nunc in, eleifend est.
-                              
-                              <br><br>Pellentesque vel dignissim libero, et sagittis elit. Nulla dignissim eleifend tellus, sed molestie risus rutrum non. Etiam lorem odio, convallis a arcu vel, bibendum molestie metus. Pellentesque imperdiet nisl ante, eu congue nisl suscipit id.
-                              <h2>Demo</h2>
+                              <p>This project is a personal project that I decided to do in 3rd year. I love 3D and I had never done procedural generations of 3D terrains.
+                              <br><br>While browsing the internet I came across a video by <i>Sebastian Lague</i> (<a href="https://youtu.be/vTMEdHcKgM4?t=0s" target="_blank">his project</a>) which reproduced what I wanted to do under unity. So I challenged myself to redo a 3D planet generator from scratch. The end goal was to be able to terraform it.
+                              <br><br>For this I used the algo of marching cubes, which is perfect for terraforming. Big games like <i>Astronner</i> are only based around this algorithm.
+                              <br><br>The big difficulty was to do everything in openGl from scratch. I obviously reused my engine, but I had never done this algo nor raycasting, terraforming or perlin noises in 3 dimensions.
+                              <br><br>The only feature I would have liked to add were collisions with the terrain and the character to be able to move around the planet, but I intend to make a physics engine for another project.</p>
+                            <h2>Demo</h2>
                               <video controls>
                                 <source src="video/marching-cubes-video.mp4" type="video/mp4">
                               </video>
-                              <h2>Features</h2>
-                              <h2>Find this project</h2>
-                                <a href="https://github.com/Hrothgor/MarchingCubesEngine"><img src="img/github.png" width="100px" height="100px"></a>
-                              <h2>Made with</h2>
+                              <br><br><a href="img/marching-cubes-sphere.png" data-lightbox="image-1"><img src="img/marching-cubes-sphere.png" width="450px" height="300px"></a>
+                              <br><br><a href="img/marching-cubes-perlin.png" data-lightbox="image-1"><img src="img/marching-cubes-perlin.png" width="450px" height="300px"></a>
+                            <br><br><h2>Features</h2>
+                            <ul>
+                              <li>
+                                My First big project using my 3D engine.
+                              </li>
+                              <li>
+                                Implementation of the marching cubes algorithm as well as use of multiple 3D perlin noise to generate a good planet.
+                                <br><br><a href="img/marching-cubes-algo.png" data-lightbox="image-1"><img src="img/marching-cubes-algo.png" width="450px" height="300px"></a>
+                              </li>
+                              <li>
+                                Implementation of raycasting as well as terraforming.
+                              </li>
+                              <li>
+                                Big optimization on the algorithm and the generation. I generate a terrain by taking into account the indices not just the vertices. I also set up a chunk system. Only my raycasting is not very optimized and my terraforming.
+                              </li>
+                              <li>
+                                I also used compute shaders to do my calculations on the GPU. I spent days trying to integrate them. I finally succeeded but unfortunately I think I am still not up to date with compute shaders. I was passing too much data between the CPU and the GPU which made the process very slow, which I therefore removed.
+                              </li>
+                              <li>
+                                I also tried to make the game a bit more beautiful with my shaders but the result is not amazing. If I resume the project I would like to add water.
+                              </li>
+                            </ul>
+                            <h2>Find this project</h2>
+                                <a href="https://github.com/Hrothgor/MarchingCubesEngine" target="_blank"><img src="img/github.png" width="100px" height="100px"></a>
+                            <h2>Made with</h2>
                               <div class="made-with">
-                                <a href="https://www.cplusplus.com/"><img src="img/c++.png" width="100px" height="100px"></a>
-                                <a href="https://www.opengl.org/"><img src="img/opengl.png" width="100px" height="100px"></a>
+                                <a href="https://www.cplusplus.com/" target="_blank"><img src="img/c++.png" width="100px" height="100px"></a>
+                                <a href="https://www.opengl.org/" target="_blank"><img src="img/opengl.png" width="100px" height="100px"></a>
                               </div>
-                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>

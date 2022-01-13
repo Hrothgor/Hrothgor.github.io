@@ -48,17 +48,38 @@
                         <div class="single-blog-post">
                           <div class="text-content">
                             <h2>About this project</h2>
-                            <p>Nullam et justo pharetra, commodo eros ac, pharetra justo. Donec vel vehicula urna. Proin sodales ligula vitae lacus elementum, at tempor nisl congue. Pellentesque nec lacus velit. Vestibulum tincidunt hendrerit ante id sagittis. Phasellus sodales nibh mattis neque interdum viverra. Nam accumsan arcu id fringilla auctor. 
-                              <br><br>Suspendisse et rutrum nisl. Phasellus porttitor metus vel justo blandit, in finibus neque elementum. Nullam semper, turpis quis egestas consequat, dui eros tristique lectus, ac euismod ex quam id mauris. Nunc sit amet nibh sollicitudin, interdum nunc in, eleifend est.
-                              
-                              <br><br>Pellentesque vel dignissim libero, et sagittis elit. Nulla dignissim eleifend tellus, sed molestie risus rutrum non. Etiam lorem odio, convallis a arcu vel, bibendum molestie metus. Pellentesque imperdiet nisl ante, eu congue nisl suscipit id.
-                              <h2>Demo</h2>
+                              <p>I decided to do this project when I made my first graphics engine in C. Without light the rendering is not usable.
+                              <br><br>It was the first time that I really dabbled in 3D shaders in GLSL. I also had to take a long time to understand how the light came into contact with the normals of my objects to reach the camera etc.
+                              <br><br>I have implemented two types of lights. The first an ambient light, it only takes into account the normals of my objects to know if the faces are in the direction of lights or not. If so the faces are illuminated, otherwise they are darkened. The second a specular light, which allows the objects to shine. This depends on the angle between the direction of the light and the camera. If the angle of the light on the object falls within the vision of the camera then the point shines.
+                              <br><br><a href="img/light-shader-ambient.png" data-lightbox="image-1"><img src="img/light-shader-ambient.png" width="450px" height="300px"></a>
+                              <br><br><a href="img/light-shader-specular.png" data-lightbox="image-1"><img src="img/light-shader-specular.png" width="450px" height="300px"></a>
+                              <br><br>I really like the end result and I'm proud of it.</p>
+                            <h2>Demo</h2>
                               <video controls>
                                 <source src="video/light-shader-video.mp4" type="video/mp4">
                               </video>
-                              <h2>Features</h2>
-                              <h2>Find this project</h2>
-                              <h2>Made with</h2>
+                              <br><br><a href="img/light-shader-without.png" data-lightbox="image-1"><img src="img/light-shader-without.png" width="450px" height="300px"></a>
+                              <br><br><a href="img/light-shader-without-specular.png" data-lightbox="image-1"><img src="img/light-shader-without-specular.png" width="450px" height="300px"></a>
+                              <br><br><a href="img/light-shader-with.png" data-lightbox="image-1"><img src="img/light-shader-with.png" width="450px" height="300px"></a>
+                            <br><br><h2>Features</h2>
+                            <ul>
+                              <li>
+                                Further use of shaders within my engine.
+                              </li>
+                              <li>
+                                Many vector calculations. Like the dot product for comparing angles, or recovering the refraction of light.
+                              </li>
+                              <li>
+                                Reusable GLSL shaders, with ambient and specular light. Since then I import this shader in all my projects including GLSL shaders.
+                              </li>
+                            </ul>
+                            <h2>Find this project</h2>
+                              <a href="https://github.com/Hrothgor" target="_blank"><img src="img/github.png" width="100px" height="100px"></a>
+                            <h2>Made with</h2>
+                              <div class="made-with">
+                                <a href="https://www.cplusplus.com/" target="_blank"><img src="img/c++.png" width="100px" height="100px"></a>
+                                <a href="https://www.opengl.org/" target="_blank"><img src="img/opengl.png" width="100px" height="100px"></a>
+                              </div>
                             </div>
                         </div>
                     </div>

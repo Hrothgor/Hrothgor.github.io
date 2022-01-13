@@ -48,28 +48,33 @@
                         <div class="single-blog-post">
                           <div class="text-content">
                             <h2>About this project</h2>
-                              <p>It's a small project that I wanted to do. I was familiar with perlin noises but had never worked with them.
-                              <br><br>The goal of the basic project was to tackle perlin noise in a 2D shader, to play with them until you found something interesting.
-                              <br><br>By playing with colors and time, I managed to have something quite nice.
-                              <br><br>Following that I reused perlin noises in a lot of my projects. To generate terrains, modify colors in shaders etc.</p>
+                              <p>While browsing the internet I was intrigued by a concept. That of starting from a perlin noise and transforming each value into an angle to be able to use them as flows.
+                              <br><br>So I tried to tweak some noises to see where it was going to take me. I had a lot of different result and then tried to implement particles.
+                              <br><br>I applied the force of the current to hundreds of particles moving along the perlin sound. By reducing the alpha of the particles and without cleaning the window I had this good final result.
                             <h2>Demo</h2>
                               <video controls>
                                 <source src="video/perlin-noise-fluid-video.mp4" type="video/mp4">
                               </video>
-                            <h2>Features</h2>
+                              <br><br><a href="img/perlin-noise-fluid-angles.png" data-lightbox="image-1"><img src="img/perlin-noise-fluid-angles.png" width="450px" height="300px"></a>
+                            <br><br><h2>Features</h2>
                             <ul>
                               <li>
-                                Usage of shader in 2D.
+                                Small system of particles with forces applied to them.
                               </li>
                               <li>
-                                First time I played with perlin noise. Perlin noise are so important for so much things. I'm happy to master them now.
+                                Using perlin noise to turn it into a stream.
+                              </li>
+                              <li>
+                                Satisfactory final rendering.
                               </li>
                             </ul>
                             <h2>Find this project</h2>
-                              <a href="https://github.com/Hrothgor"><img src="img/github.png" width="100px" height="100px"></a>
+                              <a href="https://github.com/Hrothgor" target="_blank"><img src="img/github.png" width="100px" height="100px"></a>
                             <h2>Made with</h2>
-                              <a href="https://www.cplusplus.com/"><img src="img/c++.png" width="100px" height="100px"></a>
-                              <a href="https://www.sfml-dev.org/"><img src="img/sfml.png" width="100px" height="100px"></a>
+                            <div class="made-with">
+                              <a href="https://www.cplusplus.com/" target="_blank"><img src="img/c++.png" width="100px" height="100px"></a>
+                              <a href="https://www.sfml-dev.org/" target="_blank"><img src="img/sfml.png" width="100px" height="100px"></a>
+                            </div>
                           </div>
                         </div>
                     </div>
