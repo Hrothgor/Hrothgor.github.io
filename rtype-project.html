@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Rtype Online Project</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Hroth<em>gor</em></a>
+        </div>
+      <div class="menu-icon">
+        <a href="https://github.com/hrothgor" target="_blank"><img src="img/github.png" width="50px" height="50px"></a>
+      </div>
+    </nav>
+
+    <div class="page-heading" style="background-image:url(img/rtype-item.png);" >
+        <div class="container">
+            <div class="heading-content">
+                <h1>Rtype<em> Online</em></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blog-entries">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="single-blog-post">
+                          <div class="text-content">
+                            <h2>About this project</h2>
+                              <p>This is my first Online game. I did it with 2 other people from Epitech. We recreated the Arcade Rtype game.
+                              <br><br>The main goal of this project, in addition to being online, is to create our own Entity Component System.
+                              <br><br>I didn't take care of the online part but I did all the gameplay as well as the engine with the ECS.
+                              <br><br>We have a true data-oriented ECS, with our entities which are IDs, our components as well as our systems.
+                              <br><br>It was not easy to do the gameplay, it was the first time I used an ECS. It's a completely different way of coding, it's not at all intuitive when you've coded your whole life in object-oriented.</p>
+                            <h2>Demo</h2>
+                              <video controls>
+                                <source src="video/rtype-demo-video.mp4" type="video/mp4">
+                              </video>
+                              <br><br><a href="img/rtype-4player.png" data-lightbox="image-1"><img src="img/rtype-4player.png" width="450px" height="300px"></a>
+                            <br><br><h2>Features</h2>
+                            <ul>
+                              <li>
+                                All the game is based around the ECS. (Entities are ID, Components are data, Systems are the algos)
+                              </li>
+                              <li>
+                                Big usage of template for the ECS (addComponent, getComponent etc...)
+                              </li>
+                              <li>
+                                First Online game. First time we used ECS aswell so it was very hard to connect ECS to the online system when it's the first time you do the both.
+                              </li>
+                              <li>
+                                Particle and collision system.
+                              </li>
+                            </ul>
+                            <h2>Find this project</h2>
+                              <a href="https://github.com/EpitechPromo2024/B-CPP-501-MPL-5-1-rtype-maximilien.drules" target="_blank"><img src="img/github.png" width="100px" height="100px"></a>
+                            <h2>Made with</h2>
+                            <div class="made-with">
+                              <a href="https://www.cplusplus.com/" target="_blank"><img src="img/c++.png" width="100px" height="100px"></a>
+                              <a href="https://www.sfml.com/" target="_blank"><img src="img/sfml.png" width="100px" height="100px"></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2022 Hrothgor | Designed by Jules MINGUET</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button>
+    </div>  
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <a href="CV-Jules MINGUET.pdf" target="_blank"><img src="img/CV-Jules MINGUET.png" width="auto" height="1000px"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
