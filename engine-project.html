@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Engine Project</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Hroth<em>gor</em></a>
+        </div>
+      <div class="menu-icon">
+        <a href="https://github.com/hrothgor" target="_blank"><img src="img/github.png" width="50px" height="50px"></a>
+      </div>
+    </nav>
+
+    <div class="page-heading" style="background-image:url(img/engine-item.png);" >
+        <div class="container">
+            <div class="heading-content">
+                <h1>Engine <em>with Editor</em></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blog-entries">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="single-blog-post">
+                          <div class="text-content">
+                            <h2>About this project</h2>
+                              <p>This is my biggest project, trying to do my own engine with editor and ecs. I am using Raylib for rendering and Dear ImGui for the UI, it's a exellent library for tools or editor UI.
+                              <br><br>At the beginning I just wanted to do a little physics engine, but since I really enjoy 3D so I decided to push the project further to make an editor. I decided to mimic Unity Ecs since it's probably the best way to do an Engine.
+                              <br><br>This project is still in its infancy, and I'm making progress on it every day. I am gonna update this page or you can track my progress on github.
+                              <br><br>I would really like to be able to push this project far enough to have something completely finished. I still have a lot of work to do on the project. But I feel capable of pushing it much further.</p>
+                            <h2>Demo</h2>
+                              <video controls>
+                                <source src="video/engine-demo-video.mp4" type="video/mp4">
+                              </video>
+                              <video controls>
+                                <source src="video/engine-demo-newproject-video.mp4" type="video/mp4">
+                              </video>
+                            <br><br><h2>Features</h2>
+                            <ul>
+                              <li>
+                                Entity Component system object oriented. (like unity Ecs or other engine)
+                              </li>
+                              <li>
+                                Big editor (using ImGui, with dockingspace) where you can create entity, add hierarchy (parent/child), add/remove/active/desactive component from entity, for every component you can change some values, save/load file, assets display etc...
+                                <br><br><a href="img/engine-dockingspace.png" data-lightbox="image-1"><img src="img/engine-dockingspace.png" width="450px" height="300px"></a>
+                              </li>
+                              <li>
+                                Save/load system using Json. Every component can be save et load, it keeps all the hierarchy and the components values.
+                                <br><br><a href="img/engine-save-load.png" data-lightbox="image-1"><img src="img/engine-save-load.png" width="450px" height="300px"></a>
+                              </li>
+                              <li>
+                                Directional and point lightening.
+                              </li>
+                              <li>
+                                Gizmos to translate/rotate/scale entities and gizmos system for visual help (like for the light).
+                                <br><br><a href="img/engine-gizmo-light.png" data-lightbox="image-1"><img src="img/engine-gizmo-light.png" width="450px" height="300px"></a>
+                              </li>
+                              <li>
+                                Physics Collider fitting the actual shape if it's a basic shape not a mesh. Need to add rigid body and simulation for physics.
+                                <br><br><a href="img/engine-colliders.png" data-lightbox="image-1"><img src="img/engine-colliders.png" width="450px" height="300px"></a>
+                              </li>
+                              <!--- Change when physics is added -->
+                              <li>
+                                Render engine, using Raylib.
+                              </li>
+                              <li>
+                                Moving camera in a 3D world.
+                              </li>
+                              <li>
+                                First use of singleton in cpp.
+                              </li>
+                            </ul>
+                            <br><br><h2>In Coming Features</h2>
+                              <li>
+                                Rigid body component with simulation.
+                              </li>
+                              <li>
+                                Paticles System component.
+                              </li>
+                              <li>
+                                Drag and drop assets from your directory to the engine to use them.
+                              </li>
+                              <li>
+                                Graphical pipeline upgrade.
+                              </li>
+                              <li>
+                                Optimization.
+                              </li>
+                              <li>
+                                CI and Window Compilation.
+                              </li>
+                              <li>
+                                More and more later.
+                              </li>
+                            <h2>Find this project</h2>
+                              <a href="https://github.com/Hrothgor/Physics_engine" target="_blank"><img src="img/github.png" width="100px" height="100px"></a>
+                            <h2>Made with</h2>
+                            <div class="made-with">
+                              <a href="https://www.cplusplus.com/" target="_blank"><img src="img/c++.png" width="100px" height="100px"></a>
+                              <a href="https://www.raylib.com/" target="_blank"><img src="img/raylib.png" width="100px" height="100px"></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2022 Hrothgor | Designed by Jules MINGUET</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button>
+    </div>  
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <a href="CV-Jules MINGUET.pdf" target="_blank"><img src="img/CV-Jules MINGUET.png" width="auto" height="1000px"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
