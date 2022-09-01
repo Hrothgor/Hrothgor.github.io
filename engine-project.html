@@ -49,26 +49,42 @@
                           <div class="text-content">
                             <h2>About this project</h2>
                               <p>This is my biggest project, trying to do my own engine with editor and ecs. I am using Raylib for rendering and Dear ImGui for the UI, it's a exellent library for tools or editor UI.
-                              <br><br>At the beginning I just wanted to do a little physics engine, but since I really enjoy 3D so I decided to push the project further to make an editor. I decided to mimic Unity Ecs since it's probably the best way to do an Engine.
+                              <br><br>At the beginning I just wanted to do a little physics engine, but since I really enjoy 3D so I decided to push the project further to make an editor. I decided to mimic Unity Ecs since it's probably the best way to do an Engine by yourself.
                               <br><br>This project is still in its infancy, and I'm making progress on it every day. I am gonna update this page or you can track my progress on github.
                               <br><br>I would really like to be able to push this project far enough to have something completely finished. I still have a lot of work to do on the project. But I feel capable of pushing it much further.</p>
                             <h2>Demo</h2>
-                              <h3>Engine</h3>
+                              <h3>Engine Demo</h3>
                               <video controls>
                                 <source src="video/engine-demo-video.mp4" type="video/mp4">
                               </video>
-                              <h3>Save/Load/New</h3>
+                              <h3>Engine Demo 2</h3>
                               <video controls>
-                                <source src="video/engine-demo-newproject-video.mp4" type="video/mp4">
+                                <source src="video/engine-demo-2-video.mp4" type="video/mp4">
                               </video>
                               <h3>Physics (in development)</h3>
                               <video controls>
                                 <source src="video/engine-demo-physics.mp4" type="video/mp4">
                               </video>
+                              <p>
+                                Here is some of the components you can add to your gameObject, there are some missing on the screen (BoxCollider, SphereCollider, and some custom Components I did for testing or demo like the sphere sender)
+                              </p>
+                              <br><br>
+                              <div style="display: flex;">
+                                <div style="flex: 50%; padding: 5px;">
+                                  <a href="img/engine-components.png" data-lightbox="image-1"><img src="img/engine-components.png" width="250px" height="800px"></a>
+                                </div>
+                                <div style="flex: 50%; padding: 5px;">
+                                  <p>
+                                    Example from code for the Particle system components UI
+                                  </p>
+                                  <br>
+                                  <a href="img/engine-components-code.png" data-lightbox="image-1"><img src="img/engine-components-code.png" width="700px" height="700px"></a>
+                                </div>
+                              </div>
                             <br><br><h2>Features</h2>
                             <ul>
                               <li>
-                                Entity Component system object oriented. (like unity Ecs or other engine)
+                                Entity Component system object oriented. (like unity Ecs)
                               </li>
                               <li>
                                 Big editor (using ImGui, with dockingspace) where you can create entity, add hierarchy (parent/child), add/remove/active/desactive component from entity, for every component you can change some values, save/load file, assets display etc...
@@ -77,6 +93,9 @@
                               <li>
                                 Save/load system using Json. Every component can be save et load, it keeps all the hierarchy and the components values.
                                 <br><br><a href="img/engine-save-load.png" data-lightbox="image-1"><img src="img/engine-save-load.png" width="450px" height="300px"></a>
+                              </li>
+                              <li>
+                                Big Paticles System with Atlas texture map or simple texture for particles.
                               </li>
                               <li>
                                 Directional and point lightening.
@@ -93,33 +112,33 @@
                                 Physics between Sphere and Cubes.
                               </li>
                               <li>
-                                Render engine, using Raylib.
-                              </li>
-                              <li>
-                                Moving camera in a 3D world.
-                              </li>
-                              <li>
-                                First use of singleton in cpp.
-                              </li>
-                            </ul>
-                            <br><br><h2>In Coming Features</h2>
-                              <li>
                                 Rigid body component with simulation.
-                              </li>
-                              <li>
-                                Paticles System component.
                               </li>
                               <li>
                                 Drag and drop assets from your directory to the engine to use them.
                               </li>
                               <li>
+                                Render engine, using Raylib.
+                              </li>
+                              <li>
+                                Moving camera in a 3D world.
+                              </li>
+                            </ul>
+                            <br><br><h2>In Coming Features</h2>
+                              <li>
+                                Shadow Mapping.
+                              </li>
+                              <li>
+                                Refacto graphical pipeline for materials.
+                              </li>
+                              <li>
+                                Prefabs system.
+                              </li>
+                              <li>
                                 Graphical pipeline upgrade.
                               </li>
                               <li>
-                                Optimization.
-                              </li>
-                              <li>
-                                CI and Window Compilation.
+                                Optimization. (Looks like raylib is pretty slow)
                               </li>
                               <li>
                                 More and more later.
