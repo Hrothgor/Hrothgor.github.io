@@ -1119,6 +1119,15 @@ footer a:hover {
   width: 50%;
 }
 
+.single-blog-post iframe {
+  overflow-y: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 300px;
+}
+
 .single-blog-post .text-content {
   margin-top: 20px;
   text-align: center;
